@@ -18,10 +18,19 @@
     box-sizing: border-box;
 }
 
+
 /* resets */
 .btn-primary {
     border-color: transparent;
 }
+
+h1,
+h2 {
+    font-family: var(--montserrat);
+    font-weight: bold;
+    color: var(--grey);
+}
+
 .btn-primary:hover {
     background-color: var(--white);
     border-color: var(--blue);
@@ -37,7 +46,16 @@
     text-transform: uppercase;
 }
 
+.blue-heading {
+    color: var(--blue);
+}
+
+.section-head {
+    padding: 80px 0 50px;
+}
+
 /* repeated styles */
+
 /* start header */
 .header {
     background: url(../images/shutterstock_36332421511.png) no-repeat center center / cover;
@@ -57,16 +75,8 @@
 }
 
 .header .header-content h1 span::after {
-    content: url(../images/2nd-logo.png);
+    content: url(../images/icons/2nd-logo.png);
 }
-
-/* .header .header-content .btn-round-lg {
-    border-radius: 22.5px;
-    padding: .5rem 1.5rem;
-    background-color: var(--blue);
-    color: var(--white);
-    text-transform: uppercase;
-} */
 
 /* start navbar */
 .header .navbar {
@@ -104,19 +114,70 @@
 
 /* start about us section */
 .about-us {
+    padding-bottom: 90px;
     background-color: #fbf9f9;
     font-family: var(--raleway);
 }
 
-.about-us .about-us-head {
-    padding: 80px 0 50px;
+
+
+
+/* start our services section */
+.services {
+    padding-bottom: 60px;
+    background: url(../images/services.png) no-repeat center center / cover;
 }
 
-.about-us h2 {
-    font-family: var(--montserrat);
-    font-weight: bold;
+.services .row div {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.about-us .blue-heading {
+.services .row div h3 {
+    text-transform: uppercase;
+}
+
+.services .more-services {
+    font-weight: 500;
+    color: var(--grey);
+    font-size: 20px;
+    transition: color .2s ease;
+}
+
+.services .more-services:hover {
+    text-decoration: none;
     color: var(--blue);
+}
+
+.services .more-services::after {
+    content: url(../images/icons/arrow.png);
+    position: relative;
+    top: 95%;
+    right: 50%;
+    width: 5px;
+    height: 5px;
+}
+
+
+/* start portfolio */
+.portfolio {
+    background: url(../images/portfolio-background.png);
+}
+.portfolio .filter-menu {
+    padding-bottom: 60px;
+}
+.portfolio .list-inline .list-inline-item {
+    margin-right: 2.5rem;
+    font-size: 1.4rem;
+    color: var(--grey);
+    font-weight: 500;
+}
+.portfolio .list-inline .list-inline-item:hover{
+    cursor: pointer;
+}
+.portfolio .list-inline .list-inline-item.active {
+    color: var(--blue);
+}
+.portfolio .filter-menu .images-gallery div {
+    margin-bottom: 20px;
 }
