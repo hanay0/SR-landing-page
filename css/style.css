@@ -1,0 +1,122 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap');
+
+/* variables */
+:root {
+    /* colors */
+    --blue: #13c9fd;
+    --grey: #555453;
+    --white: #FFFFFF;
+    /* fonts */
+    --montserrat: 'Montserrat', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* resets */
+.btn-primary {
+    border-color: transparent;
+}
+.btn-primary:hover {
+    background-color: var(--white);
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+/* repeated styles */
+.btn-round-lg {
+    border-radius: 22.5px;
+    padding: .5rem 1.5rem;
+    background-color: var(--blue);
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+/* repeated styles */
+/* start header */
+.header {
+    background: url(../images/shutterstock_36332421511.png) no-repeat center center / cover;
+    height: 630px;
+}
+
+.header .header-content {
+    height: 500px;
+    font-family: var(--montserrat);
+    color: var(--white);
+}
+
+.header .header-content h1 {
+    color: var(--blue);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.header .header-content h1 span::after {
+    content: url(../images/2nd-logo.png);
+}
+
+/* .header .header-content .btn-round-lg {
+    border-radius: 22.5px;
+    padding: .5rem 1.5rem;
+    background-color: var(--blue);
+    color: var(--white);
+    text-transform: uppercase;
+} */
+
+/* start navbar */
+.header .navbar {
+    background-color: var(--blue);
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-direction: column;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: var(--raleway);
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    padding: 0.2rem 1rem;
+    color: var(--grey);
+}
+
+.navbar-dark .navbar-nav .search {
+    color: var(--white);
+}
+
+.nav-icons .nav-item .nav-link i {
+    color: var(--white);
+    font-size: 1rem;
+    transition: color .2s ease-in-out;
+}
+
+.nav-icons .nav-item .nav-link i:hover {
+    color: rgba(255, 255, 255, .6);
+}
+
+/* end navbar */
+
+/* start about us section */
+.about-us {
+    background-color: #fbf9f9;
+    font-family: var(--raleway);
+}
+
+.about-us .about-us-head {
+    padding: 80px 0 50px;
+}
+
+.about-us h2 {
+    font-family: var(--montserrat);
+    font-weight: bold;
+}
+
+.about-us .blue-heading {
+    color: var(--blue);
+}
